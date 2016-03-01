@@ -1,0 +1,19 @@
+<form role="form">
+    <div class="form-group">
+        <label for="inputName">
+            Name
+        </label>
+        <input type="text" class="form-control" id="inputName"
+               [(ngModel)]="model.name" required />
+    </div>
+    <div class="form-group">
+        <label for="inputAge">
+            Password
+        </label>
+        <input type="text" class="form-control" id="inputAge"
+               [(ngModel)]="model.age" required/>
+    </div>
+    <button type="submit" class="btn btn-default" (click)="onSubmit()">
+        Submit
+    </button>
+</form>

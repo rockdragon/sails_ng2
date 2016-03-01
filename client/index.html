@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>angular2练习</title>
+    <base href="/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 1. bootstrap -->
+    <link rel='stylesheet' href='/css/style.css'/>
+    <link rel='stylesheet' href='/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='/css/bootstrap-theme.min.css'/>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- 2. Load libraries -->
+    <script src="libs/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="libs/systemjs/dist/system.src.js"></script>
+    <script src="libs/rxjs/bundles/Rx.js"></script>
+    <script src="libs/angular2/bundles/angular2.dev.js"></script>
+    <script src="libs/angular2/bundles/router.dev.js"></script>
+    <script src="libs/angular2/bundles/http.dev.js"></script>
+
+    <!-- 3. Configure SystemJS -->
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/bootstrap')
+                .then(null, console.error.bind(console));
+    </script>
+
+</head>
+<!-- 3. Display the application -->
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <my-app>Loading...</my-app>
+        </div>
+
+        <!--<div class="col-md-3">-->
+        <!--<form role="form">-->
+        <!--<div class="form-group">-->
+
+        <!--<label for="exampleInputEmail1">-->
+        <!--Email address-->
+        <!--</label>-->
+        <!--<input type="email" class="form-control" id="exampleInputEmail1"/>-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+
+        <!--<label for="exampleInputPassword1">-->
+        <!--Password-->
+        <!--</label>-->
+        <!--<input type="password" class="form-control" id="exampleInputPassword1"/>-->
+        <!--</div>-->
+        <!--<button type="submit" class="btn btn-default">-->
+        <!--Submit-->
+        <!--</button>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--<div class="col-md-3">-->
+        <!--<ol>-->
+        <!--<li>-->
+        <!--Lorem ipsum dolor sit amet-->
+        <!--</li>                       -->
+        <!--</ol>-->
+        <!--</div>-->
+    </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

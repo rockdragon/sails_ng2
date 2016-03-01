@@ -1,0 +1,25 @@
+<div class="row mt10">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+        <ul class="nav nav-tabs">
+            <li [class.active]="activeByHash('#/home')">
+                <a href="/#/home">Home</a>
+            </li>
+            <li [class.active]="activeByHash('#/data')">
+                <a href="/#/data">Data</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+<div class="row mt10">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
