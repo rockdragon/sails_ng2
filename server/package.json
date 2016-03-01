@@ -2,7 +2,7 @@
   "name": "sails_ng2",
   "version": "0.0.1",
   "scripts": {
-    "start": "sails lift ",
+    "start": "sails lift "
   },
   "dependencies": {
     "body-parser": "~1.10.2",
