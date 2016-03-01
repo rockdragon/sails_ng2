@@ -16,12 +16,16 @@ cd server && npm install && cd ..
 ```
 
 ##运行步骤
+1.1) 启动Redis服务器
+```shell
+sudo redis-server
+```
 
-1.1) 启动Web服务器
+1.2) 启动Web服务器
 ```shell
 npm start
 ```
-1.2) 启动开发服务器 (动态编译生成内容
+1.3) 启动开发服务器 (动态编译生成内容
 ```shell
 npm run dev
 ```
