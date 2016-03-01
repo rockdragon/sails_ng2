@@ -1,4 +1,4 @@
-#Node.js + Angular2 demo
+# Sails.js + Angular2 demo
 
 ##环境设置
 
