@@ -1,6 +1,6 @@
 var cassandra = require('cassandra-driver');
 var client = new cassandra.Client({
-    contactPoints: ['61.28.116.34'],
+    contactPoints: [process.env.DB_HOST],
     keyspace: 'packt'
 });
 
