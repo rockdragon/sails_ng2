@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "start": "cd server && sails lift && cd ..",
-    "dev": "gulp build && gulp watch"
+    "dev": "gulp build && gulp watch",
+    "test": "mocha --recursive --timeout 15000 -R spec --require should --harmony tests/ --bail"
   },
   "dependencies": {
     "angular2": "2.0.0-beta.1",
@@ -21,6 +22,8 @@
     "gulp-sourcemaps": "1.6.0",
     "gulp-typescript": "2.10.0",
     "gulp-watch": "^4.3.5",
-    "run-sequence": "1.1.5"
+    "mocha": "^2.4.5",
+    "run-sequence": "1.1.5",
+    "should": "^8.2.2"
   }
 }

@@ -4,6 +4,8 @@
 
 1) 安装Node.js全局包
 ```shell
+npm install -g sails
+npm install -g mocha
 npm install -g typescript@next
 npm install -g gulp
 npm install -g grunt
