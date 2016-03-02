@@ -25,6 +25,7 @@ sudo redis-server
 
 1.2) 启动Web服务器
 ```shell
+export DB_HOST=[cassandra服务器IP地址]
 npm start
 ```
 1.3) 启动开发服务器 (动态编译生成内容
